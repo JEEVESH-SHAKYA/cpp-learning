@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-int  a,b;
+    int  a,b;
 cin >>a;
 int x[a];
 for(int i=0;i<a;i++){
@@ -26,8 +26,17 @@ for(int i=0;i<a;i++){
 for(int i=0;i<b;i++){
     hash_2[y[i]]+=1;
 }
-for(int i=0;i<=(mx_1>mx_2 ? mx_2 : mx_1 );i++){
-    if(hash_1[i]>0 && hash_2[i]>0)cout <<i << " ";
+int p=0;
+if(mx_1==mx_2){
+    for(int i=0;i<=mx_1;i++){
+        if(hash_1[i]!=hash_2[i]){
+            p=1;
+            break;
+        }
+    }
+    if(p==1)cout <<"NO";
+    else cout <<"YES";
 }
-return 0;
+else cout <<"NO";
+    return 0;
 }
