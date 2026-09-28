@@ -16,6 +16,7 @@ int main(){
     }
     word+=s[i];
    }
+   m[word]+=1;
     for(auto it:m){
         cout <<it.first <<" -> " <<it.second <<endl;
     }
