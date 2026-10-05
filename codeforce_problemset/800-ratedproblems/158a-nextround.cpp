@@ -9,7 +9,7 @@ int main(){
         cin>>a[i];
     }
     for(int i=0;i<n;i++){
-        if(a[i]>a[k])p++;
+        if(a[i]>=a[k-1]&&a[i]>0)p++;
     }
     cout<<p;
     return 0;
