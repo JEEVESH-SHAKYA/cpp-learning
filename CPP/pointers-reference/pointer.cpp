@@ -4,12 +4,12 @@ int main(){
     int x=0;
     int * p=&x;
     cout<<*p<<endl;
-    cout<<p;
+    cout<<p<<endl;
     int a[]={1,2,3,4,5,6};
     int *pt=a;//array does not require & it automatically gives value of adrress of first element
-    for(int i=0;i<3;i++){
+    for(int i=0;i<6;i++){
         cout<<*pt<<endl;
-        pt=pt+1;
+        pt=pt+1;//it basically adds to index
     }
     return 0;
 }
