@@ -16,8 +16,8 @@ int main(){
     x.enrolled =true;
     print(x);
 }
-void print(student student){
-    cout<<student.name<<'\n';
-    cout<<student.gpa<<'\n';
-    cout<<student.enrolled<<'\n';
+void print(student student){//here struct is passed by value ie
+    cout<<student.name<<'\n';//student variable is copy of x
+    cout<<student.gpa<<'\n';//thus these both have different address
+    cout<<student.enrolled<<'\n';//to pass by reference just add '&' before student variable
 }
