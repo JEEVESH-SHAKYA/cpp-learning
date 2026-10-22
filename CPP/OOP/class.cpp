@@ -4,8 +4,11 @@ using namespace std;
 group our data to make it look clean other than that
 there is nothing we can't do without class that we can do 
 with class*/
+/*the major difference in class and struct is that in struct everything is defaulted as public
+while in class everything is defaulted as private this is the only difference*/
 class player{
-public:
+public://public means it can be accessed by other fxn outside this class
+//while private would not
     string x;
     int a;
     void print(){
