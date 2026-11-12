@@ -8,7 +8,7 @@ struct student{
     double gpa;
     bool enrolled;
 };//<-----this semicolon is important!!!
-void print(student x);
+void print(student student);
 int main(){
     student x;
     x.name="mick";
