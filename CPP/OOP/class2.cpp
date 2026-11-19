@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 //example to understand
-// difference in private and public varibales in classes
+// difference in private and public variables in classes
 class test
 {
     private:
